@@ -1,0 +1,191 @@
+\documentclass{beamer}
+\usetheme{Madrid}
+\usecolortheme{default}
+\usepackage[utf8]{inputenc}
+\usepackage[turkish]{babel}
+
+
+\title{IEEE İTÜ RAS Git Eğitimi}
+\author{Kadir Yavuz Kurt}
+\institute{IEEE İTÜ RAS}
+\date{\today}
+
+\begin{document}
+
+% Başlık slaytı
+\begin{frame}
+    \titlepage
+\end{frame}
+
+% İçindekiler slaytı
+\begin{frame}{İçindekiler}
+    \tableofcontents
+\end{frame}
+
+% Bölüm 1: Git Nedir?
+\section{Git Nedir?}
+\begin{frame}{Git Nedir?}
+    \begin{itemize}
+        \item Git, bir sürüm kontrol sistemidir.
+        \item Kod değişikliklerini kaydetmek, izlemek ve yönetmek için kullanılır.
+        \item Dağıtık bir yapıya sahiptir.
+        \item Linus Torvalds tarafından 2005 yılında geliştirildi.
+    \end{itemize}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.25\linewidth]{img/git_logo.png}
+\end{figure}
+\end{frame}
+
+% Bölüm 2: Git'i Neden Kullanmalıyız?
+\section{Git'i Neden Kullanmalıyız?}
+\begin{frame}{Git'i Neden Kullanmalıyız?}
+    \begin{itemize}
+        \item Ekip projelerinde sürüm kontrolü sağlar.
+        \item Değişiklikleri geri almayı kolaylaştırır.
+        \item Farklı sürümler üzerinde çalışmayı destekler.
+        \item İş birliğini artırır.
+    \end{itemize}
+\end{frame}
+
+% Bölüm 3: Git'in Temel Komutları
+\section{Git'in Temel Komutları}
+\begin{frame}{Git'in Temel Komutları}
+    \begin{itemize}
+        \item `git init`: Yeni bir Git deposu başlatır.
+        \item `git add <dosya>`: Dosyada yapılan değişiklikleri hazırlık alanına ekler.
+        \item `git commit -m "mesaj"`: Değişiklikleri depoya kaydeder.
+        \item `git status`: Depodaki durumu kontrol eder.
+        \item `git log`: Commit geçmişini gösterir.
+        \item `git remote add`: Ağdaki (internet, ssh, vs.) bir git reposuna yerel repoyu bağlar.
+    \end{itemize}
+\end{frame}
+
+% Bölüm 4: Pratik: Git Deposu Oluşturma
+\section{Pratik: Git Deposu Oluşturma}
+\begin{frame}{Pratik: Git Deposu Oluşturma}
+    \begin{enumerate}
+        \item Yeni bir klasör oluşturun: \texttt{mkdir proje}
+        \item Git deposu başlatın: \texttt{git init}
+        \item Bir dosya oluşturun: \texttt{touch dosya.txt}
+        \item Dosyayı ekleyin: \texttt{git add dosya.txt}
+        \item Commit yapın: \texttt{git commit -m "İlk commit"}
+    \end{enumerate}
+\end{frame}
+
+% Bölüm 5: Git Hosting Hizmetlerine Giriş
+\section{Git Hosting Hizmetlerine Giriş}
+\begin{frame}{Git Hosting Hizmetlerine Giriş}
+    \begin{itemize}
+        \item GitHub, GitLab, Bitbucket, Azure DevOps gibi platformlar.
+        \item Merkezi depolama ve iş birliği imkanı.
+        \item CI/CD (Continuous Integration/Continuous Delivery), proje yönetimi araçları gibi ek özellikler sunar.
+    \end{itemize}
+
+\end{frame}
+
+% Bölüm 6: GitHub'a Detaylı Giriş
+\section{GitHub'a Detaylı Giriş}
+\begin{frame}{GitHub Nedir?}
+    \begin{itemize}
+        \item GitHub, Git depolarını barındıran bir platformdur.
+        \item Ekip projelerinde iş birliğini kolaylaştırır.
+        \item Açık kaynak projeleri paylaşmak ve katkıda bulunmak için kullanılır.
+    \end{itemize}
+
+\end{frame}
+
+% Bölüm 7: Diğer Git Hizmetleri
+\section{Diğer Git Hizmetleri}
+\begin{frame}{Diğer Git Hizmetleri}
+    \begin{itemize}
+        \item \textbf{GitLab}: Git tabanlı bir sürüm kontrolü platformu. CI/CD, issue tracking ve daha fazlasını sunar.
+        \item \textbf{Bitbucket}: Atlassian tarafından geliştirilen bir Git ve Mercurial deposu barındırma hizmeti.
+        \item \textbf{Azure DevOps}: Microsoft'un sunduğu geliştirme hizmetleri, Git depoları, CI/CD boru hatları ve proje yönetimi araçları içerir.
+        \item \textbf{SourceForge}: Açık kaynak projeleri için barındırma ve dağıtım platformu.
+    \end{itemize}
+    \begin{figure}
+        \centering
+        \includegraphics[width=0.5\linewidth]{img/git_hizmetleri.png}
+    \end{figure}
+\end{frame}
+
+% Bölüm 8: GitHub Uygulamaları
+\section{GitHub Uygulamaları}
+\begin{frame}{GitHub Uygulamaları}
+    \begin{itemize}
+        \item \textbf{GitHub Desktop}: GUI tabanlı bir Git istemcisidir. Komut satırı kullanmak istemeyenler için idealdir.
+        \item \textbf{GitHub Actions}: Sürekli entegrasyon ve dağıtım (CI/CD) süreçlerini otomatikleştirir.
+        \item \textbf{GitHub Pages}: Projelerinizi doğrudan GitHub üzerinden barındırıp yayınlamanıza olanak tanır.
+        \item \textbf{GitHub Issues}: Proje yönetimi ve hata takibi için kullanılır.
+    \end{itemize}
+\end{frame}
+
+% Bölüm 9: Git İle Çalışma Araçları
+\section{Diğer Git ile Çalışma Araçları}
+\begin{frame}{Git ile Çalışma Araçları}
+    \begin{itemize}
+        \item \textbf{Git GUI}: Git'in resmi GUI istemcisi.
+        \item \textbf{SourceTree}: Atlassian tarafından geliştirilen ücretsiz bir Git ve Mercurial istemcisi.
+        \item \textbf{Visual Studio Code}: Entegre Git desteği ile popüler bir kod editörü.
+        \item \textbf{TortoiseGit}: Windows için bir Git istemcisi, powershell entegrasyonu sağlar.
+    \end{itemize}
+\end{frame}
+
+% Bölüm 10: GitHub Desktop Kullanımı
+\section{GitHub Desktop Kullanımı}
+\begin{frame}{GitHub Desktop Kullanımı}
+    \begin{enumerate}
+        \item Git hizmetlerini terminal üzerinden kullanmak istemiyorsanız masaüstü uygulaması kullanabilirsiniz.
+        \item GitHub Desktop'u resmi web sitesinden (https://desktop.github.com/) indirin ve kurun.
+        \item GitHub hesabınızla oturum açın.
+        \item Yeni bir depo oluşturun veya mevcut bir depoyu klonlayın.
+        \item Değişiklikleri yapın ve "Commit to main" butonuna tıklayarak commit yapın.
+        \item "Push origin" butonuyla değişiklikleri GitHub'a gönderin.
+    \end{enumerate}
+\end{frame}
+
+% Bölüm 11: GitHub ile Proje Yönetimi
+\section{GitHub ile Proje Yönetimi}
+\begin{frame}{GitHub ile Proje Yönetimi}
+    \begin{itemize}
+        \item \textbf{Branches (Dallar)}: Farklı özellikler veya düzeltmeler üzerinde çalışmak için kullanılır.
+        \item \textbf{Pull Requests}: Değişikliklerin gözden geçirilmesi ve ana dal ile birleştirilmesi süreci.
+        \item \textbf{Issues}: Hatalar, özellik istekleri ve diğer görevlerin takibi.
+        \item \textbf{Projects}: Kanban panoları ile proje yönetimi.
+    \end{itemize}
+\end{frame}
+
+\section{Uygulama}
+\begin{frame}{Uygulama}
+    \centering
+    \Huge Linux Terminal veya VSCode Terminal Kullanarak Github Reposuna İçerik Yüklemek.
+
+\end{frame}
+
+\section{Son}
+\begin{frame}{Sorular?}
+    \centering
+    \Huge Sorularınız var mı?
+\end{frame}
+
+\begin{frame}{Automosphere 24}
+\begin{figure}
+    \centering
+    \includegraphics[width=0.5\linewidth]{img/automosphere24.png}
+    \caption{GitHub Automosphere Sponsorluk Linki}
+    \label{fig:enter-label}
+\end{figure}
+\end{frame}
+
+
+
+
+
+
+\begin{frame}
+    \centering
+    \Huge Dinlediğiniz İçin Teşekkürler!
+\end{frame}
+
+\end{document}
